@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Halal-Zone</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+  #imagePreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .preview-image {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .preview-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #fileInputContainer {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  #fileInput {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #fileInputText {
+    font-size: 24px;
+    color: #aaa;
+  }
+  #fileInputIcon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+</style>
+  <!-- =======================================================
+  * Template Name: Restaurantly - v3.1.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>ejindion@gmail.com</span></i>
+       <!----<i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>-->
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>English</li>
+          <li><a href="#">Filipino</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Halal-Zone</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!----
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+        --
+          <li><a class="nav-link scrollto" href="#menu">Diners</a></li>
+      -->
+          <li><a class="nav-link scrollto" href="#gallery">Establishment</a></li>
+          <!----
+          <li><a class="nav-link scrollto" href="#events">Events</a></li>
+    --
+          <li><a class="nav-link scrollto" href="#chefs">Team</a></li>
+  -->
+          <!----
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+      -->
+          <!----
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+        -->
+          <li><a class="nav-link scrollto" href="#contact">Locate Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="owner.html" class="book-a-table-btn scrollto d-none d-lg-flex">Logout</a>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>Right Choice</span></h1>
+          <h2>Offers "Le'chon Manok".</h2>
+
+          <div class="btns">
+            <a href="#gallery" class="btn-menu animated fadeInUp scrollto">Establishment</a>
+            <!----
+            <a href="#contact" class="btn-book animated fadeInUp scrollto">Feedback Us</a>
+          -->
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.facebook.com/reel/1336601440399654" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Right Choice</h3>
+            <p class="fst-italic">
+                The establishment offers 'chicken inasal' only.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> LOCATION:  Quezon Ave., Poblacion 5, Midsayap, North Cotabato</li>
+              <li><i class="bi bi-check-circle"></i> BUSINESS HOURS:  7 am – 9 pm</li>
+              <li><i class="bi bi-check-circle"></i> CONTACT NO.:  09205937981</li>
+            </ul>
+            <p>
+                Since its inception in 1997, 'Right Choice' has remained a top favorite among locals 
+                for their mouthwatering chicken inasal. With nearly three decades of consistently delivering flavorful 
+                and tender grilled chicken, it's no wonder they continue to be the go-to destination for those seeking the ultimate inasal experience.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= --
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>Why go to Penalvers?</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>It's Tasty and Delecious</h4>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4>It's precise</h4>
+              <p>We never miss an Inch</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= --
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Location</h2>
+          <p>Location of Establishments</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-cake">Bakeshop</li>
+              <li data-filter=".filter-chips">Snack House</li>
+              <li data-filter=".filter-specialty">Restaurants</li>
+              <li data-filter=".filter-nigger">Eatery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/penalver.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/vb5MAjyVVXry7B25A">Peñalver Food and Refreshment Hub</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Offers traditional Filipino delicacies.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/8tso.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/FWqS7P84Km3u4wuPA">Otso Kainan</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provide Local Snacks, indigenous goods, Filipino cuisine, and traditional Filipino eatery.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">James Kainan & Fried chicken</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides combinations of chicken and rice as well as the classic "Batchoy".
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/kakubu.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/dpCFD1ZTk8fpif7M6">Ka Kubo</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Homemade Filipino inspired food and cuisine.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/kusina-nicks.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/aRPKuTBghTHewSSf9">Kusina Nickoy’s</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides Homemade Food, ensuring the taste of home-cooked goodness.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/amariah.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/Yc8ut2XmDZBNZSBo9">Amariah Fried Chicken House</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides Several budget-friendly fried chicken combos.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/Axl's.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/g7nJqxWHhe4unV7e6">Axl’s Chicken Inasal House</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Variety of afforadable chicken and rice combos.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-chips">
+            <img src="assets/img/menu/macsim.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/xjMVMMXvnXCTgEpo8">Macsim’s Pizza</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides freshly made pizza and everyone's beloved fries.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-cake">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/5rAjydSGKUXsgyzJ8">Delbros Bakery</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              They offer bread and pastries.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-cake filter-specialty">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/tsgSVKREYvLQxn3CA">Ace Resto and Bakeshop</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              They offer filipino cuisine, pizza, pastries, and snacks.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-nigger">
+            <img src="assets/img/menu/Tenerife.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/ANXN6MKeLdA8UjwRA">Tenerife Eatery</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides a simple cafeteria style setup featuring traditional filipino dishes.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty filter-chips">
+            <img src="assets/img/menu/gourmand.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/exov5mdgyB49P3on8">The Gourmand Resto and Cafe</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Serves a variety of chickens, pasta, and refreshing beverages.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/Right-choice.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/6XyJdvjS5Rhq3sdh8">Right Choice</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Offers "Le'chon Manok".
+            </div>
+          </div>
+          
+          <div class="col-lg-6 menu-item filter-chips">
+            <img src="assets/img/menu/kai.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/aVhDFDaeRm4kWiEW9">Kai Tsaa</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Provides a range of milk tea drinks and snacks.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="assets/img/menu/vague.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="https://maps.app.goo.gl/fY5yXsK4ERQ9puDS9">Vagus Kouzina</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              They offer varieties of food options including fried rice, chicken dishes and combo meals.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= --
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Establishments</h2>
+          <p>Check Out The Different Establishments</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Peñalver Food and Refreshment Hub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Otso Kainan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Ka Kubo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Kusina Nickoy’s</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Amariah Fried Chicken House</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Vagus Kouzina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Kai Tsaa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Right Choice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Tenerife Eatery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Ace Resto and Bakeshop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Delbros Bakery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-12">Macsim’s Pizza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-13">James Kainan & friend chicken</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-14">Axl’s Chicken Inasal House</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-15">The Gourmand Resto and Cafe</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Peñalver Food and Refreshment Hub</h3>
+                    <p class="fst-italic">The establishment offers traditional Filipino delicacies such as 'kakanin' alongside a compact carinderia setup.</p>
+                    <p>'Peñalver' began by occasionally making and selling 'kakanin', but as demand increased, it grew into a successful business. Starting small, their love for making 'kakanin' turned into a thriving venture, sharing Filipino delicacies with more people.</p>
+                    <p>LOCATION:  Poblacion 8, Midsayap, North Cotabato</p>
+                    <p>CONTACT NO.:  0908 547 7864</p>
+                    <p>FACEBOOK:  https://www.facebook.com/PFRH008</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/penalver.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Otso Kainan</h3>
+                    <p class="fst-italic">They provide local snacks, indigenous goods, Filipino cuisine, beverages, and a traditional Filipino eatery.</p>
+                    <p>Starting with just 4 tables and a small store, Otso Kainan has grown strong over 10 years; now, it has developed into a thriving eatery serving local foods to happy customers.</p>
+                    <p>LOCATION:  Poblacion 8, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  6 am – 8 pm</p>
+                    <p>CONTACT NO.:  0995 654 9331</p>
+                    <p>FACEBOOK:  https://www.facebook.com/profile.php?id=100089053800128</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/8tso.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ka Kubo</h3>
+                    <p class="fst-italic">The establishment serves homemade Filipino-inspired food and cuisine, which they also incorporate into their beverages, providing a unique and flavorful dining experience for their customers. Additionally, they offer catering services for various events.</p>
+                    <p>Originating in 2010, this eatery has been crafting homemade Filipino-inspired dishes and drinks, infusing authentic flavors into every bite and sip. Over the years, it has also expanded its offerings to provide catering services for various events, ensuring that the delicious taste of their cuisine can be enjoyed on any occasion.</p>
+                    <p>LOCATION:  Purok Sampaguita, Poblacion 8, Midsayap Cotabato</p>
+                    <p>BUSINESS HOURS:  10 am – 2pm (continues) 4pm – 9 pm </p>
+                    <p>CONTACT NO.:  0977 478 0456</p>
+                    <p>FACEBOOK:  https://www.facebook.com/KakuboGardensAndRestaurant</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/kakubo.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Kusina Nickoy’s</h3>
+                    <p class="fst-italic">The establishment provides a variety of 'panglutong bahay' dishes to its customers, ensuring a taste of home-cooked goodness for all. Customers can enjoy an array of comforting Filipino dishes that evoke memories of home.</p>
+                    <p>Opened in 2017, this eatery has been a favorite spot for those craving home-cooked Filipino dishes. Since then, it's been serving a variety of 'panglutong bahay,' providing a taste of comfort and tradition to its customers.</p>
+                    <p>LOCATION:  Poblacion 5, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  6 am – 8 pm</p>
+                    <p>CONTACT NO.:  0907 556 2954</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/kusina.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Amariah Fried Chicken House </h3>
+                    <p class="fst-italic">They provide several options of fried chicken combos at a budget-friendly price.</p>
+                    <p>Since starting on September 25, 2023, this chicken spot has become a community favorite, understanding that customers are happy with their small menu, focusing on perfecting their dishes rather than offering many options, making them a beloved local spot.</p>
+                    <p>LOCATION:  Quezon Ave., Poblacion 5, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  6:30 am – 10 pm</p>
+                    <p>CONTACT NO.:  0909 450 0275</p>
+                    <p>FACEBOOK:  https://www.facebook.com/AmariahFriedChicken</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/amariah.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Vagus Kouzina</h3>
+                    <p class="fst-italic">The establishment provides a variety of food options including fried rice, chicken dishes, combo meals, halal choices, pasta, sandwiches, and soup.</p>
+                    <p>Vagus Kouzina, a newly opened halal food establishment, has just launched this month in Midsyap, boasting a wide array of menu options that pique the interest of many. This marks their second branch, following the success of their first location in Kabacan.</p>
+                    <p>LOCATION:  Poblacion 3, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  10 am – 9 pm</p>
+                    <p>CONTACT NO.:  0981 087 4281</p>
+                    <p>FACEBOOK:  https://www.facebook.com/VagusKouzina</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/vagus.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-7">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Kai Tsaa</h3>
+                    <p class="fst-italic">The establishment provides a range of milk tea drinks and snacks.</p>
+                    <p>The establishment emerged in 2020 amidst the pandemic-induced job losses. Seeing the trend for milk teas, the owner seized the opportunity to start a business. The name "Kai" was derived from the owner's child, blended with "tsaa," which means tea in Filipino.</p>
+                    <p>LOCATION:  Lapu-lapu Street, Poblacion 1, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  10 am – 8 pm</p>
+                    <p>CONTACT NO.:  0917 192 0595</p>
+                    <p>FACEBOOK:  https://www.facebook.com/profile.php?id=61550596403242</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/kai.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-8">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Right Choice</h3>
+                    <p class="fst-italic">The establishment offers 'chicken inasal' only</p>
+                    <p>Since its inception in 1997, 'Right Choice' has remained a top favorite among locals for their mouthwatering chicken inasal. With nearly three decades of consistently delivering flavorful and tender grilled chicken, it's no wonder they continue to be the go-to destination for those seeking the ultimate inasal experience.</p>
+                    <p>LOCATION:  Quezon Ave., Poblacion 5, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  7 am – 9 pm</p>
+                    <p>CONTACT NO.:  09205937981</p>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/right-choice.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-9">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tenerife Eatery</h3>
+                    <p class="fst-italic">The establishment provides a simple cafeteria-style setup featuring traditional Filipino dishes.</p>
+                    <p>Tenerife, a food establishment that has been a fixture in Midsayap for over 15 years, stays true to its concept of serving homestyle dishes. Despite the passing years, it continues to delight customers with its comforting and familiar flavors.</p>
+                    <p>LOCATION: Poblacion 2, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  6 am – 3 pm</p>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/tenarife.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-10">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ace Resto and Bakeshop</h3>
+                    <p class="fst-italic">They offer a range of dishes including Filipino ulam, savory pizzas, delectable pastries, pancit, and burgers.</p>
+                    <p>For two decades, this local spot has been a dependable presence near the church, serving up tasty dishes. Despite its age, it keeps things fresh by regularly adding new items to its menu, ensuring there's something for everyone to enjoy, regardless of their age or preferences.</p>
+                    <p>LOCATION: Sto.Nino Street, Poblacion 2, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  5 am – 5 pm</p>
+                    <p>CONTACT NO.:  0951 574 7111</p>
+                
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/ace.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-11">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Delbros Bakery</h3>
+                    <p class="fst-italic">They Offer Breads and Pastries!</p>
+                    <p>The establishment first began its business way back in 2018, founded on a passion for baking and a commitment to quality. Today, it stands as a beloved local bakery, known for its consistently well-baked bread that people often stop by for when passing through.</p>
+                    <p>LOCATION: Poblacion 6, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  4 am – 8 pm</p>
+                    <p>CONTACT NO.:  0938 029 8345</p>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-12">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Macsim’s Pizza</h3>
+                    <p class="fst-italic">The place serves freshly made pizza and everyone's beloved fries!</p>
+                    <p>The establishment was established on January 2, 2021, with a mission to offer freshly made pizzas to customers. They aimed to fill a gap in the market, providing delicious and convenient pizza options for people to enjoy.</p>
+                    <p>LOCATION: NDMC main gate, Poblacion 5, Midsayap, Cotabato.</p>
+                    <p>BUSINESS HOURS:  8:30 am – 9 pm</p>
+                    <p>CONTACT NO.:  0967 004 0486 (Globe) 0963 542 2626 (Smart)</p>
+                    <p>FACEBOOK:  https://www.facebook.com/MacsimsPizza</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/macsim.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-13">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>James Kainan & friend chicken</h3>
+                    <p class="fst-italic">They provide combinations of chicken and rice, as well as the classic ‘Batchoy’.</p>
+                    <p>The establishment, which opened its doors around January 2024, is a recent addition to the neighborhood, boasting a Classic mini setup tailored to students and workers on a budget, strategically positioned near schools and workplaces.</p>
+                    <p>LOCATION: Poblacion 8, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  7 am – 8 pm</p>
+                    <p>CONTACT NO.:  0963 427 3509</p>
+                    <p>FACEBOOK:  https://www.facebook.com/MacsimsPizza</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+            
+              <div class="tab-pane" id="tab-14">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Axl’s Chicken Inasal House</h3>
+                    <p class="fst-italic">The establishment provides a variety of affordable chicken and rice combos, along with some traditional Filipino dishes.</p>
+                    <p>Despite being newly constructed, this food establishment quickly garnered a loyal customer base due to its affordable meal options, leading to its rapid success and establishment as a stable business in the community.</p>
+                    <p>LOCATION: Quezon Ave., Poblacion 6, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  9 am – 10 pm</p>
+                    <p>CONTACT NO.:  0927 434 1610</p>
+                    <p>FACEBOOK:  https://www.facebook.com/profile.php?id=100083267766203</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/Axls.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            
+
+
+              <div class="tab-pane" id="tab-15">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>The Gourmand Resto + Café</h3>
+                    <p class="fst-italic"> The establishment serves a variety of options including chicken, pasta, and refreshing beverages.</p>
+                    <p>"The Gourmand" was founded during the pandemic era, when the owner was motivated to launch a distinctive food business featuring a serene, ambient atmosphere.</p>
+                    <p>LOCATION: Quezon Ave, Poblacion 4, Midsayap, North Cotabato</p>
+                    <p>BUSINESS HOURS:  10 am – 9 pm</p>
+                    <p>CONTACT NO.:  0951 465 3069</p>
+                    <p>FACEBOOK: https://www.facebook.com/TGRCOfficial</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/Specials/gourmand.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= --
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$189</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$290</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>$99</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book a Table</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Book a Table</button></div>
+        </form>
+
+      </div>
+    </section>-- End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= --
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from Our Establishment</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <label for="fileInput" id="fileInputContainer">
+                    <input type="file" id="fileInput" accept="image/*">
+                    <span id="fileInputText">Click to add photo</span>
+                    <span id="fileInputIcon">+</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <div id="imagePreview"></div>
+              </div>
+            </div>
+          </div>
+          <!----
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        -->
+        </div>
+
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= --
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Web Shooters</h2>
+          <p>Our Team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Webshooters</h4>
+                  <span>Team</span>
+                </div>
+                <div class="social">
+                  
+                  <a href="https://www.facebook.com/dion.demeterio"><i class="bi bi-facebook"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Francine Cambronero</h4>
+                  <span>Researcher</span>
+                </div>
+                <div class="social">
+                  
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jose Jan Ritz Navarro</h4>
+                  <span>Project Leader</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        -->
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Location</h2>
+          <p>Locate Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d296.0428857694542!2d124.5359865!3d7.1944473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f89da380d02ee9%3A0xd5bf760936d9df4f!2sRight%20Choice%20-%20Lechon%20Manok!5e1!3m2!1sen!2sph!4v1714071125723!5m2!1sen!2sph" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Midsayap - Marbel Road, Midsayap, Cotabato</p>
+              </div>
+              <!---
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+              -->
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ejindion@gmail.com</p>
+              </div>
+              <!----
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            --
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="includes/reserve.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Name of Establishment" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Halal Zone</h3>
+              <p>
+                Midsayap - Marbel Road <br>
+                Midsayap, Cotabato<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> ejindion@gmail.com<br>
+              </p>
+              <!----
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            -->
+            </div>
+          </div>
+          <!----
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+        -->
+
+          <!----
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Halal-Zone</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://www.facebook.com/dion.demeterio">Ejin Demeterio</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+        // Function to update and save the content
+        function updateAndSaveContent() {
+            var editableContent = document.getElementById("editableContent").value;
+            document.getElementById("displayContent").innerHTML = editableContent;
+            
+            // Save the content to local storage
+            localStorage.setItem("editableContent", editableContent);
+        }
+
+        // Function to load and display the saved content
+        function loadContent() {
+            var savedContent = localStorage.getItem("editableContent");
+            if (savedContent) {
+                document.getElementById("editableContent").value = savedContent;
+                document.getElementById("displayContent").innerHTML = savedContent;
+            }
+        }
+
+        // Initial load of saved content
+        loadContent();
+    </script>
+    <script>
+      const fileInput = document.getElementById('fileInput');
+      const imagePreview = document.getElementById('imagePreview');
+      const refreshButton = document.getElementById('refreshButton');
+  
+      let images = [];
+  
+      // Load images from localStorage when the page loads
+      window.addEventListener('load', function() {
+        const savedImages = JSON.parse(localStorage.getItem('uploadedImages'));
+        if (savedImages) {
+          savedImages.forEach(imageUrl => {
+            const img = createPreviewImage(imageUrl);
+            imagePreview.appendChild(img);
+            images.push(imageUrl);
+          });
+        }
+      });
+  
+      fileInput.addEventListener('change', function(event) {
+        const files = event.target.files;
+  
+        if (files) {
+          Array.from(files).forEach(file => {
+            const reader = new FileReader();
+  
+            reader.onload = function(e) {
+              const imageUrl = e.target.result;
+              const img = createPreviewImage(imageUrl);
+              imagePreview.appendChild(img);
+              images.push(imageUrl);
+              saveImagesToLocalStorage(images);
+            }
+  
+            reader.readAsDataURL(file);
+          });
+        }
+      });
+  
+      refreshButton.addEventListener('click', function() {
+        imagePreview.innerHTML = '';
+        images = [];
+        localStorage.removeItem('uploadedImages');
+      });
+  
+      function createPreviewImage(imageUrl) {
+        const container = document.createElement('div');
+        container.className = 'preview-image';
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        container.appendChild(img);
+  
+        const deleteButton = document.createElement('button');
+        deleteButton.className = 'delete-button';
+        deleteButton.innerText = 'Delete';
+        deleteButton.addEventListener('click', function() {
+          const index = images.indexOf(imageUrl);
+          if (index !== -1) {
+            images.splice(index, 1);
+            container.remove();
+            saveImagesToLocalStorage(images);
+          }
+        });
+        container.appendChild(deleteButton);
+  
+        return container;
+      }
+  
+      function saveImagesToLocalStorage(images) {
+        localStorage.setItem('uploadedImages', JSON.stringify(images));
+      }
+    </script>
+
+</body>
+
+</html>
